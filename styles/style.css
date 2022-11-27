@@ -100,9 +100,25 @@ p, ul{
 .contacts-list{
   display: flex;
   margin-left: auto;
+  
 }
+.icon-header{
+  fill: #757575;
+  margin-right: 10px;
+}
+.mail:hover .icon-header{
+  fill: #2196F3;
+}
+.tel:hover .icon-header {
+  fill: #2196F3;
+}
+
 .contacts-list .item:not(:last-child){
   margin-right: 50px;
+}
+.contacts-header{
+  display: flex;
+  align-items: center;
 }
 .contacts-list
 .contacts-header {
@@ -119,7 +135,14 @@ p, ul{
 /* main-index.html */
 /* hero-section */
 .hero {
-  background-color: #2F303A;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(#2F303A66, #2F303A66), 
+    url(../images/hero-bcg.jpg), linear-gradient(#C4C4C4, #C4C4C4);
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -161,12 +184,25 @@ p, ul{
 .properties-list{
   display: flex;
 }
+.properties-list .item{
+  width: 270px;
+}
 .properties-list .item:not(:last-child){
   margin-right: 30px;
 }
 .properties{
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.properties-icon{
+  width: 70px;
+  height: 70px;
+}
+.properties-svg-container{
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 .properties-title {
   margin-bottom: 10px;
