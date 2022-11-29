@@ -369,11 +369,12 @@ padding-bottom: 94px;
 }
 .footer-container{
   display: flex;
+  align-items: baseline;
 }
 .footer-social{
-background: rgba(255, 255, 255, 0.1);
-border-radius: 50%;
-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
 }
 
 
@@ -427,7 +428,11 @@ color: #fff;
 }
 .example{
   width: calc((100% - 60px) / 3);
-  
+}
+.example:hover,
+.example:focus{
+  width: calc((100% - 60px) / 3);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .example:not(:nth-child(3n)){
   margin-right: 30px;
